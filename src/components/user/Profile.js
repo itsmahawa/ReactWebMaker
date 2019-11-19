@@ -78,17 +78,6 @@ export default function Profile(props) {
               className="form-control"
               id="firstName"
               placeholder="Enter your first name..."
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="lastName">Last Name</label>
-            <input
-              type="text"
-              className="form-control"
-              id="lastName"
-              placeholder="Enter your last name..."
               value={firstName}
               onChange={e => setFirstName(e.target.value)}
             />
@@ -105,7 +94,10 @@ export default function Profile(props) {
             />
           </div>
         </form>
-        <Link to="/user/:uid/website" className="btn btn-primary btn-block">
+        <Link
+          to={`/user/${params.uid}:uid/website`}
+          className="btn btn-primary btn-block"
+        >
           Websites
         </Link>
         <Link className="btn btn-danger btn-block" to="/login">
