@@ -95,7 +95,7 @@ export default function Profile(props) {
           </div>
         </form>
         <Link
-          to={`/user/${params.uid}:uid/website`}
+          to={`/user/${params.uid}/website`}
           className="btn btn-primary btn-block"
         >
           Websites

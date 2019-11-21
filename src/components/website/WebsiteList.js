@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 
 export default function WebsiteList(props) {
   const params = useParams();
+
   const [websites, setWebsites] = useState([]);
 
   useEffect(() => {
@@ -18,7 +19,7 @@ export default function WebsiteList(props) {
           </Link>
           <span className="navbar-brand mb-0 h1 ml-4">Websites</span>
         </div>
-        <Link className="text-light" to="/user/:uid/website/new">
+        <Link className="text-light" to={`/user/${params.uid}/website/new`}>
           <i className="fas fa-plus" />
         </Link>
       </nav>
@@ -35,7 +36,7 @@ export default function WebsiteList(props) {
                 className="float-right"
                 to={`/user/${website.developerId}/website/${website._id}`}
               >
-                <i className="fas fa-plus" />
+                <i className="fas fa-cog" />
               </Link>
             </li>
           ))}
