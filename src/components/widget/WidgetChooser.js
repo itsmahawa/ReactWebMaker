@@ -37,40 +37,49 @@ export default function WidgetChooser(props) {
       <main className="container">
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
-            <button onClick={create.bind(this, "HEADING")} className="btn">
+            <button
+              onClick={create.bind(this, "HEADING")}
+              className="btn btn-primary"
+            >
               Header
             </button>
           </li>
           <li className="list-group-item">
-            <a href="!#">Label</a>
+            <button className="btn btn-primary">Label</button>
           </li>
           <li className="list-group-item">
-            <a href="!#">HTML</a>
+            <button className="btn btn-primary">HTML</button>
           </li>
           <li className="list-group-item">
-            <a href="!#">Text Input</a>
+            <button className="btn btn-primary">Text Input</button>
           </li>
           <li className="list-group-item">
-            <a href="!#">Link</a>
+            <button className="btn btn-primary">Link</button>
           </li>
           <li className="list-group-item">
-            <a href="!#">Button</a>
+            <button className="btn btn-primary">Button</button>
           </li>
           <li className="list-group-item">
-            <button className="btn" onClick={create.bind(this, "IMAGE")}>
+            <button
+              className="btn btn-primary"
+              onClick={create.bind(this, "IMAGE")}
+            >
               Image
             </button>
           </li>
           <li className="list-group-item">
-            <button className="btn" onClick={create.bind(this, "YOUTUBE")}>
+            <button
+              className="btn btn-primary"
+              onClick={create.bind(this, "YOUTUBE")}
+            >
               YouTube
             </button>
           </li>
           <li className="list-group-item">
-            <a href="!#">Data Table</a>
+            <button className="btn btn-primary"> Data Table </button>
           </li>
           <li className="list-group-item">
-            <a href="!#">Repeater</a>
+            <button className="btn btn-primary">Repeater</button>
           </li>
         </ul>
       </main>

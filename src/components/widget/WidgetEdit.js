@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import WidgetHeading from "./WidgetHeading";
 import WidgetImage from "./WidgetImage";
-import WidgetYouTube from "./WidgetYouTube";
+import WidgetYouTube from "./WidgetYoutube";
 
 export default function WidgetEdit(props) {
   const params = useParams();
@@ -43,7 +43,7 @@ export default function WidgetEdit(props) {
     if (newWidget.widgetType === "YOUTUBE") {
       // split url with "/"
       const urlArray = newWidget.url.split("/");
-      // parse url into embeded version
+      // parse url into embedded version
       newWidget.url =
         "https://www.youtube.com/embed/" + urlArray[urlArray.length - 1];
     }
